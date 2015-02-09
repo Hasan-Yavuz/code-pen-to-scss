@@ -1,28 +1,72 @@
 // Main
 
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: $background;
-  font-family: $helvetica;
-}
-
-h1 {
-  text-align: center;
+  min-width: 630px;
   font-family: sans-serif;
-  letter-spacing: 2px;
-  font-weight: 700; 
-  text-transform: uppercase;
-  color: #fff;
-  margin-top: 1.2em;
 }
 
-.icon {
-  @include button($primary-icon, $primary-icon-hover, #fff);   
+header {
+  background: $mm-bg;
 }
 
-.border {
-  border: 3px solid #fff;
-  // you can nest elements or selectors to target them more specifically.
-    .icon {
-      border: 3px solid #fff;
-    }
+.mm-menu {
+  position: relative;
+  z-index: 99;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 630px; 
+  max-width: 1000px;
+  text-align: center;
+  font-size: 0;
+}
+
+[class*=item] {
+  min-width: 125px;
+  padding: 0 $item-padding;
+  cursor: pointer;
+  text-decoration: none;   
+  font-size: 1.22rem;
+  color: linen;
+  transition: .3s;
+}
+
+.mm-item {
+  display: inline-block;
+  background: $mm-bg;
+  width: $mm-item-width;
+  line-height: $menu-height;
+}
+
+[class*=item]:hover {
+  background: $item-hover;
+  color: white;
+}
+
+.dd-menu {
+  position: absolute;
+  width: $mm-item-width;
+  z-index: -1;
+  top: -400px;
+  margin-left: -($item-padding);
+  transition: .3s ease-in-out;
+}
+
+.mm-item:hover > .dd-menu,
+.mm-item:focus > .dd-menu {
+  top: $menu-height;
+}
+
+.dd-item {
+  display: block;
+  background: $dd-bg;
+  line-height: ($menu-height * 0.6);
+  font-size: 85%;
+  width: 100%;
 }

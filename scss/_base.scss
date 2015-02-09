@@ -2,17 +2,10 @@
 /* Are placeholders for storing information that you want to reuse throughout your styles. You can store things like colours, font-stacks, or any css value you think you might want to reuse 
 SCSS uses the '$' symbol to declar variables. */
 
-// Colors
-
-$primary-icon: none;
-$primary-icon-hover: #fff;
-
-$background: #009dff;
-
-$bg-color: none;
-
-$text-color: #fff;
-$text-color-hover: #009dff;
-
-//Font Stacks
-$helvetica: Helvetica, Arial, sans-serif;
+$mm-item-count: 5;
+$mm-item-width: 100% / $mm-item-count;
+$menu-height: 60px;
+$item-padding: $menu-height * 0.33;
+$mm-bg: hsl(9, 100%, 64%);
+$dd-bg: hsl(9, 100%, 58%);
+$item-hover: lighten($mm-bg, 4%);
