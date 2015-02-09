@@ -34,7 +34,7 @@ header {
   cursor: pointer;
   text-decoration: none;   
   font-size: 1.22rem;
-  color: linen;
+  color: $dd-text-hover-color;
   transition: .3s;
 }
 
@@ -43,11 +43,15 @@ header {
   background: $mm-bg;
   width: $mm-item-width;
   line-height: $menu-height;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: $mm-item-text-color;
 }
 
 [class*=item]:hover {
   background: $item-hover;
-  color: white;
+  color: $dd-text-hover-color
 }
 
 .dd-menu {
@@ -70,4 +74,5 @@ header {
   line-height: ($menu-height * 0.6);
   font-size: 85%;
   width: 100%;
+  color: 
 }

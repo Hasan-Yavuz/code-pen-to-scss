@@ -7,5 +7,7 @@ $mm-item-width: 100% / $mm-item-count;
 $menu-height: 60px;
 $item-padding: $menu-height * 0.33;
 $mm-bg: #fff;
-$dd-bg: hsl(9, 100%, 58%);
+$dd-bg: hsl(35, 100%, 50%);
+$dd-text-hover-color: hsl(35, 100%, 50%);
 $item-hover: lighten($mm-bg, 4%);
+$mm-item-text-color: #9b9b9b;
