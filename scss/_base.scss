@@ -1,0 +1,18 @@
+// Variables
+/* Are placeholders for storing information that you want to reuse throughout your styles. You can store things like colours, font-stacks, or any css value you think you might want to reuse 
+SCSS uses the '$' symbol to declar variables. */
+
+// Colors
+
+$primary-icon: none;
+$primary-icon-hover: #fff;
+
+$background: #009dff;
+
+$bg-color: none;
+
+$text-color: #fff;
+$text-color-hover: #009dff;
+
+//Font Stacks
+$helvetica: Helvetica, Arial, sans-serif;

@@ -1,0 +1,28 @@
+// Main
+
+body {
+  background-color: $background;
+  font-family: $helvetica;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700; 
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1.2em;
+}
+
+.icon {
+  @include button($primary-icon, $primary-icon-hover, #fff);   
+}
+
+.border {
+  border: 3px solid #fff;
+  // you can nest elements or selectors to target them more specifically.
+    .icon {
+      border: 3px solid #fff;
+    }
+}
