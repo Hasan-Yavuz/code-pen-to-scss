@@ -68,6 +68,9 @@ header {
 .mm-item:hover > .dd-menu,
 .mm-item:focus > .dd-menu {
   top: $menu-height;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .dd-item {
