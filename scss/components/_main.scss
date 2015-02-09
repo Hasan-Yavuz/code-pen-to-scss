@@ -78,3 +78,12 @@ header {
   width: 100%;
   color: $dd-text-color;
 }
+
+.logo {
+  width: 50px;
+  height: 60px;
+  margin-left: 2em;
+  position: absolute;
+  vertical-align: middle;
+  z-index: 9;
+}
